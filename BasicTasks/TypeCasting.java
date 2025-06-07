@@ -1,8 +1,8 @@
-package Java;
+package Java.BasicTasks;
 
 public class TypeCasting{
     public static void main(String[] args){
-        System.out.println("Winding Casting:");
+        System.out.println("Winding Casting: int to double");
         int myInt = 9;
         double mydouble = myInt;
         System.out.println(myInt);
@@ -10,7 +10,7 @@ public class TypeCasting{
         
         System.out.println();
 
-        System.out.println("Narrowing Casting :");
+        System.out.println("Narrowing Casting : int to float");
         int maxScore  = 500;
         int userScore = 423;
         

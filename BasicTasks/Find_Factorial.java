@@ -1,14 +1,15 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class Find_Factorial {
     public static void main(String[] args) {
-        
 
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter a number who's factorial you want to print : ");
         int num = obj.nextInt();
         obj.close();
-        int factorial = 1;
+        BigInteger factorial = BigInteger.ONE; // Int can store foctorial of small numbers(range < 2 billion) so we use BigInteger here.
+                                               // BigInteger do not take direct numeric input, so pass the value like that.
 
         if (num < 0) {
             System.out.println("Enter a valid number.");
@@ -16,8 +17,7 @@ public class Find_Factorial {
             System.out.println(factorial);
         } else {
             for (int i = 1; i <= num; i++){
-                factorial *= i;
-            }
+                factorial = factorial.multiply(BigInteger.valueOf(i));            }
             System.out.println("Factorial of the number " + num + " is : " + factorial);
         }
         
