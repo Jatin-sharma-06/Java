@@ -1,0 +1,48 @@
+ Array :
+=======
+   - It is a List of Elements of the Same Type placed in a Contiguous memory Location.
+
+Operations of Array :
+=====================
+    - Create
+    - Input
+    - Output
+    - Update
+
+Creating an Array:
+==================
+    - dataType arrayName[] = new dataType[size];
+
+    - example : int marks[] = new int[20];
+
+
+Passing arrays as argument :
+===========================
+    - ( we pass array as pass by reference )
+
+LinearSearch :
+==============
+    - Find the index of element/char/string in a given array.
+
+
+Binary Search :
+================
+    - pre-requisite - Sorted Array
+
+Array List :
+============
+
+
+Binary Search :
+===============
+  * Prerequisite - Sorted Arrays [exp: {1, 2, 3, ...} or {9, 8, 7, ... }]
+    - Consider a key(mid) in Array, and compare searching element with key :
+        -   if key == search_element :> return mid element.
+        -   if key > search_element :> find element  before key.
+        -   if key < search_element :> find element  after key.
+
+    - Repeat until you find the search_element repeat the process.
+    - In each iteration size of the array(n) becomes half(n/2)
+
+        - if search_element is not in the array : return -1.
+
